@@ -1,0 +1,36 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: JM_acc_development
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: jonathanpoon
+  password:
+
+test:
+  <<: *default
+  database: JM_acc_test
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: jonathanpoon
+  password:
+  host: localhost
+
+production:
+  <<: *default
+  database: JM_acc_production
+  username: jonathanpoon
+  password:

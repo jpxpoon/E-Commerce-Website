@@ -1,0 +1,65 @@
+<div id="store">
+  <div class="container">
+    <!-- header -->
+    <h1>Store</h1>
+    <hr width="60%">
+
+    <!-- Categories -->
+    <ul class="nav_store cl-effect-12">
+      <a href="#" class="all">ALL</a>
+      <a href="#" data-id="Bracelet" class="active">BRACELET</a>
+      <a href="#" data-id="Earrings">EARRING</a>
+      <a href="#" data-id="Necklace">NECKLACE</a>
+      <a href="#" data-id="Other">OTHER ACCESSORIES</a>
+    </ul>
+
+    <div id="Bracelet" class="grid-container" style="display:block;">
+      <ul class="grid">
+        <% @bracelets_images.each do |image| %>
+            <li>
+              <a href="#"><img src="<%= image.image_path[0] %>" ></a>
+              <% @bracelets.each do |product| %>
+                  <% if product.product_id == image.product_id %>
+                      <h4><%= product.name %></h4>
+                  <% end %>
+              <% end %>
+            </li>
+        <% end %>
+
+      </ul>
+    </div>
+
+    <div id="Earrings" class="grid-container">
+      <ul class="grid">
+        <% @earrings_images.each do |image| %>
+            <li>
+              <a href="#"><img src="<%= image.image_path[0] %>" ></a>
+              <% @earrings.each do |product| %>
+                  <% if product.product_id == image.product_id %>
+                      <h4><%= product.name %></h4>
+                  <% end %>
+              <% end %>
+            </li>
+
+        <% end %>
+      </ul>
+    </div>
+
+    <div id="Necklace" class="grid-container">
+      <ul class="grid">
+        <% @necklaces_images.each do |image| %>
+            <li>
+              <a href="#"><img src="<%= image.image_path[0] %>" ></a>
+              <% @necklaces.each do |product| %>
+                  <% if product.product_id == image.product_id %>
+                      <h4><%= product.name %></h4>
+                  <% end %>
+              <% end %>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+
+  </div>
+</div> <!-- store -->
+
