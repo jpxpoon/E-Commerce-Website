@@ -1,12 +1,9 @@
 <div id="home_page">
   <!-- background -->
   <div class="video_container">
-    <video class="videobg" autoplay loop>
-      <!--<= video_tag ["dots.mp4", "dots.ogg", "dots.webm"], :class => "videobg", :autoplay => true, :loop => true, :muted => true %>-->
-      <source src="/assets/dots.mp4" type="video/mp4" />
-      <source src="/assets/dots.webm" type="video/webm" />
-      <source src="/assets/dots.ogv" type="video/ogg" />
-    </video>
+    <!--<video class="videobg" autoplay loop>-->
+      <%= video_tag ["dots.mp4", "dots.ogg", "dots.webm"], :class => "videobg", :autoplay => true, :loop => true, :muted => true %>
+    <!--</video>-->
   </div>
 
   <!-- Site navigation menu -->

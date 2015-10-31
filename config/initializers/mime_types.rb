@@ -5,5 +5,4 @@
 
 Mime::Type.register "video/webm", :webm
 Mime::Type.register "video/ogg", :ogv
-Mime::Type.register "video/mp4", :m4v
-Mime::Type.register "cideo/mp4", :mp4
+Mime::Type.register "video/mp4", :mp4

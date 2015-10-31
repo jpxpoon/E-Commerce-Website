@@ -314,6 +314,7 @@ ul.grid li {
     width: 30.83%;
     margin: 0 0 2% 2%;
     display: inline-block;
+    color: #3c3c38 !important;
     box-shadow: 0 0 5px #ddd;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -322,7 +323,7 @@ ul.grid li {
 
 ul.grid li img {
     max-width: 100%;
-    height: inherit;
+    height: 245px;
     border: 1px solid #3c3c38;
 }
 

@@ -21,7 +21,8 @@
               <% @bracelets.each do |product| %>
                   <% if product.product_id == image.product_id %>
                       <h4><%= product.name %></h4>
-                  <% end %>
+                      <h4>$<%= product.price %></h4>
+            <% end %>
               <% end %>
             </li>
         <% end %>
@@ -37,7 +38,8 @@
               <% @earrings.each do |product| %>
                   <% if product.product_id == image.product_id %>
                       <h4><%= product.name %></h4>
-                  <% end %>
+                      <h4>$<%= product.price %></h4>
+            <% end %>
               <% end %>
             </li>
 
@@ -53,7 +55,8 @@
               <% @necklaces.each do |product| %>
                   <% if product.product_id == image.product_id %>
                       <h4><%= product.name %></h4>
-                  <% end %>
+                      <h4>$<%= product.price %></h4>
+            <% end %>
               <% end %>
             </li>
         <% end %>
