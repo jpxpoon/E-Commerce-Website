@@ -259,25 +259,15 @@ h1 {
     text-align: center;
 }
 
-@-webkit-keyframes animated-width {
-    from { width: 50%; }
-    to { width: 5%; }
-}
-
-.no_ani {
-    border: 0.1em solid rgb(199, 199, 199);
-}
-
-hr{
-    border: 0.1em solid rgb(199, 199, 199);
-    -webkit-animation-name: animated-width;
-    -webkit-animation-duration: 2.0s;
+hr {
+    border-top: 1px solid #3c3c38;
 }
 
 .nav_store {
     position: relative;
     height: 100px;
     text-align: center;
+    padding-right: 40px; !important;
 }
 
 .nav_store > a {
@@ -287,7 +277,7 @@ hr{
     position: relative;
     display: inline-block;
     margin-top: 20px;
-    min-width: 200px;
+    min-width: 150px;
     heignt: 50px;
 
     text-decoration: none;
@@ -305,15 +295,15 @@ hr{
 /*-- image grid --*/
 ul.grid {
     list-style: none;
-    margin-left: -8%;
-    padding-left: 100px;
+    /*margin-left: -8%;*/
+    /*padding-left: 100px;*/
+
 }
 
 ul.grid li {
     display: inline-block;
     width: 30.83%;
     margin: 0 0 2% 2%;
-    display: inline-block;
     color: #3c3c38 !important;
     box-shadow: 0 0 5px #ddd;
     box-sizing: border-box;
@@ -322,10 +312,10 @@ ul.grid li {
 }
 
 ul.grid li img {
-    max-width: 100%;
-    height: 245px;
-    border: 1px solid #3c3c38;
-}
+     max-width: 100%;
+     height: 245px;
+     border: 1px solid #3c3c38;
+ }
 
 @media (max-width: 1199px) {
     .container {
@@ -351,7 +341,138 @@ ul.grid li img {
     }
 }
 
+/*---------------*/
+/***** Lexi *****/
+/*---------------*/
 
+.effect-lexi {
+    /*background: -webkit-linear-gradient(-45deg, #000 0%,#fff 100%);*/
+    /*background: linear-gradient(-45deg, #000 0%,#fff 100%);*/
+}
+
+.effect-lexi img {
+    margin: -10px 0 0 -10px;
+    max-width: none;
+    width: -webkit-calc(100% + 10px);
+    width: calc(100% + 10px);
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(10px,10px,0);
+    transform: translate3d(10px,10px,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.effect-lexi figcaption::before,
+.effect-lexi p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+.effect-lexi figcaption::before {
+    position: absolute;
+    right: -100px;
+    bottom: -100px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 900px rgba(255,255,255,0.2);
+    content: '';
+    opacity: 0;
+    -webkit-transform: scale3d(0.5,0.5,1);
+    transform: scale3d(0.5,0.5,1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.effect-lexi:hover img {
+    opacity: 0.6;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.effect-lexi p {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 0 1.5em 1.5em 0;
+    width: 140px;
+    text-align: right;
+    opacity: 0;
+    -webkit-transform: translate3d(20px,20px,0);
+    transform: translate3d(20px,20px,0);
+}
+
+.effect-lexi:hover figcaption::before {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+.effect-lexi:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #3c3c38;
+}
+
+.grid figure img {
+    /*position: relative;*/
+    /*display: block;*/
+    /*min-height: 100%;*/
+    /*max-width: 100%;*/
+    /*opacity: 0.8;*/
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /*
 .dropdown-menu li {

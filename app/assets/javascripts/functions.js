@@ -30,9 +30,10 @@
 
 $(document).ready(
   function() {
-    $("html").niceScroll();
+    $("html").niceScroll({mousescrollstep: '20'});
   }
 );
+
 
 /*-- smooth sroll page --*/
 $(function() {
@@ -80,6 +81,17 @@ function OnClick(showHideDiv, switchImgTag) {
 
 
 $(document).ready(function() {
+    $('.dropdown-menu a').on('click', function(event){
+        event.preventDefault();
+        $('.grid-container').fadeOut(500, function(){
+            $('#' + gridID).fadeIn(500);
+        });
+        var gridID = $(this).attr("data-id");
+
+        $('.nave_store a').removeClass("active");
+        $(this).addClass("active");
+    });
+
     $('.nav_store a').on('click', function(event){
         event.preventDefault();
         $('.grid-container').fadeOut(500, function(){
