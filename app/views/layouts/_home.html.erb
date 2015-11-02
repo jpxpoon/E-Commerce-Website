@@ -1,11 +1,4 @@
 <div id="home_page">
-  <!-- background -->
-  <div class="video_container">
-    <!--<video class="videobg" autoplay loop>-->
-      <%= video_tag ["dots.mp4", "dots.ogg", "dots.webm"], :class => "videobg", :autoplay => true, :loop => true, :muted => true %>
-    <!--</video>-->
-  </div>
-
   <!-- Site navigation menu -->
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
@@ -18,14 +11,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-logo" href="#"><img src="/assets/JM_logo.png" ></a>
+        <a class="navbar-logo" href="#"><%= link_to image_tag("JM_logo.png"), background_show_url %></a>
       </div>
       <!-- menu item -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
         <div id="menu-center">
         <ul class="nav navbar-nav navbar-left" data-hover="dropdown" data-animations="lightSpeedIn" >
           <li><a class="menu" href="#home_page">HOME</a></li>
-          <li><a class="menu" href="#about_us">ABOUT US</a></li>
+          <li><a class="menu" href="#product">ABOUT US</a></li>
           <li class="dropdown"><a class="menu all" href="#store">STORE<span class="caret-right"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#store" data-id="Bracelet">Bracelet</a></li>
@@ -62,11 +55,5 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-
-  <!-- Logo -->
-  <div id="logo">
-      <img src="/assets/JM_logo_white.png" >
-    </a>
-  </div>
 
 </div> <!-- main -->

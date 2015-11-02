@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-	root 'store#index'
+  get 'product/show'
+  get 'background/show'
+
+	root to: "background#show"
 
 
   # Example of regular route:

@@ -1,5 +1,5 @@
-class StoreController < ApplicationController
-  def index
+class BackgroundController < ApplicationController
+  def show
     @bracelets = Product.where(category: 'Bracelet')
     @bracelets_images = Image.where(category: 'Bracelet')
 

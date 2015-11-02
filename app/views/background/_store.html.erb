@@ -18,14 +18,14 @@
       <ul class="grid">
         <% @bracelets_images.each do |image| %>
             <figure class="effect-lexi">
-              <a href="#"><img src="<%= image.image_path[0] %>" ></a>
+              <a href="#product"><img src="<%= image.image_path[0] %>" ></a>
               <figcaption>
-              <% @bracelets.each do |product| %>
-                  <% if product.product_id == image.product_id %>
-                      <h4><%= product.name %></h4>
-                      <h4>$<%= product.price %></h4>
-                  <% end %>
-              <% end %>
+                <% @bracelets.each do |product| %>
+                    <% if product.product_id == image.product_id %>
+                        <h4><%= product.name %></h4>
+                        <h4>$<%= product.price %></h4>
+                    <% end %>
+                <% end %>
               </figcaption>
             </figure>
         <% end %>
@@ -37,12 +37,12 @@
       <ul class="grid">
         <% @earrings_images.each do |image| %>
             <li>
-              <a href="#"><img src="<%= image.image_path[0] %>" ></a>
+              <%= link_to image_tag(image.image_path[0], :alt => image.product_id), product_show_path %>
               <% @earrings.each do |product| %>
                   <% if product.product_id == image.product_id %>
                       <h4><%= product.name %></h4>
                       <h4>$<%= product.price %></h4>
-            <% end %>
+                  <% end %>
               <% end %>
             </li>
 
@@ -54,12 +54,12 @@
       <ul class="grid">
         <% @necklaces_images.each do |image| %>
             <li class="effect-lexi">
-              <a href="#"><img src="<%= image.image_path[0] %>" ></a>
+              <a href="#product"><img src="<%= image.image_path[0] %>" ></a>
               <figcaption>
-              <% @necklaces.each do |product| %>
+                <% @necklaces.each do |product| %>
                     <% if product.product_id == image.product_id %>
-                      <h4><%= product.name %></h4>
-                      <h4>$<%= product.price %></h4>
+                        <h4><%= product.name %></h4>
+                        <h4>$<%= product.price %></h4>
                     <% end %>
                 <% end %>
               </figcaption>

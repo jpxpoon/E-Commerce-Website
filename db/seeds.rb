@@ -39,37 +39,37 @@ Product.create! product_id:9, category: "Earring", name: "Circle ring earrings",
 Product.create! product_id:10, category: "Earring", name: "Rain drop earrings", price: 1, quantity: 1, active: true
 Product.create! product_id:11, category: "Earring", name: "Flower crystal earrings", price: 1, quantity: 1, active: true
 Product.create! product_id:12, category: "Earring", name: "Flower earrings", price: 1, quantity: 1, active: true
-Image.create! product_id:1, category: "Earring", image_path: ["/assets/products/Earring/E01-Crystal flower ear rings/E01-1.jpg",
-                                                              "/assets/products/Earring/E01-Crystal flower ear rings/E01-2.png",
-                                                              "/assets/products/Earring/E01-Crystal flower ear rings/E01-3.png"]
-Image.create! product_id:2, category: "Earring", image_path: ["/assets/products/Earring/E02-Leaf ear rings/E02-2.png",
-                                                              "/assets/products/Earring/E02-Leaf ear rings/E02-3.png"]
-Image.create! product_id:3, category: "Earring", image_path: ["/assets/products/Earring/E03-Circle flower ear rings/E03-1.jpg",
-                                                              "/assets/products/Earring/E03-Circle flower ear rings/E03-2.png",
-                                                              "/assets/products/Earring/E03-Circle flower ear rings/E03-3.png"]
-Image.create! product_id:4, category: "Earring", image_path: ["/assets/products/Earring/E04-Snake ear rings/E04-1.jpg",
-                                                              "/assets/products/Earring/E04-Snake ear rings/E04-2.jpg",
-                                                              "/assets/products/Earring/E04-Snake ear rings/E04-3.png",
-                                                              "/assets/products/Earring/E04-Snake ear rings/E04-4.png",
-                                                              "/assets/products/Earring/E04-Snake ear rings/E04-5.png"]
-Image.create! product_id:5, category: "Earring", image_path: ["/assets/products/Earring/E05-Double triangle ear rings/E05-1.jpg",
-                                                              "/assets/products/Earring/E05-Double triangle ear rings/E05-2.jpg",
-                                                              "/assets/products/Earring/E05-Double triangle ear rings/E05-3.png",
-                                                              "/assets/products/Earring/E05-Double triangle ear rings/E05-4.png",
-                                                              "/assets/products/Earring/E05-Double triangle ear rings/E05-5.png"]
-Image.create! product_id:7, category: "Earring", image_path: ["/assets/products/Earring/E07-Ultra slim stick ear rings/E07-2.png",
-                                                              "/assets/products/Earring/E07-Ultra slim stick ear rings/E07-3.png"]
-Image.create! product_id:8, category: "Earring", image_path: ["/assets/products/Earring/E08-Triangle peral ear rings/E08-2.png",
-                                                              "/assets/products/Earring/E08-Triangle peral ear rings/E08-3.png"]
-Image.create! product_id:9, category: "Earring", image_path: ["/assets/products/Earring/E09-Circle ring ear rings/E09-1.png",
-                                                              "/assets/products/Earring/E09-Circle ring ear rings/E09-2.png"]
-Image.create! product_id:10, category: "Earring", image_path: ["/assets/products/Earring/E10-Rain drop ear rings/E10-2.png",
-                                                               "/assets/products/Earring/E10-Rain drop ear rings/E10-3.png"]
-Image.create! product_id:11, category: "Earring", image_path: ["/assets/products/Earring/E11-Flower crystal ear rings/E11-2.png",
-                                                               "/assets/products/Earring/E11-Flower crystal ear rings/E11-3.png"]
-Image.create! product_id:12, category: "Earring", image_path: ["/assets/products/Earring/E12-Flower ear rings/E12-2.png",
-                                                               "/assets/products/Earring/E12-Flower ear rings/E12-3.png",
-                                                               "/assets/products/Earring/E12-Flower ear rings/E12-4.png"]
+Image.create! product_id:1, category: "Earring", image_path: ["products/Earring/E01-Crystal flower ear rings/E01-1.jpg",
+                                                              "products/Earring/E01-Crystal flower ear rings/E01-2.png",
+                                                              "products/Earring/E01-Crystal flower ear rings/E01-3.png"]
+Image.create! product_id:2, category: "Earring", image_path: ["products/Earring/E02-Leaf ear rings/E02-2.png",
+                                                              "products/Earring/E02-Leaf ear rings/E02-3.png"]
+Image.create! product_id:3, category: "Earring", image_path: ["products/Earring/E03-Circle flower ear rings/E03-1.jpg",
+                                                              "products/Earring/E03-Circle flower ear rings/E03-2.png",
+                                                              "products/Earring/E03-Circle flower ear rings/E03-3.png"]
+Image.create! product_id:4, category: "Earring", image_path: ["products/Earring/E04-Snake ear rings/E04-1.jpg",
+                                                              "products/Earring/E04-Snake ear rings/E04-2.jpg",
+                                                              "products/Earring/E04-Snake ear rings/E04-3.png",
+                                                              "products/Earring/E04-Snake ear rings/E04-4.png",
+                                                              "products/Earring/E04-Snake ear rings/E04-5.png"]
+Image.create! product_id:5, category: "Earring", image_path: ["products/Earring/E05-Double triangle ear rings/E05-1.jpg",
+                                                              "products/Earring/E05-Double triangle ear rings/E05-2.jpg",
+                                                              "products/Earring/E05-Double triangle ear rings/E05-3.png",
+                                                              "products/Earring/E05-Double triangle ear rings/E05-4.png",
+                                                              "products/Earring/E05-Double triangle ear rings/E05-5.png"]
+Image.create! product_id:7, category: "Earring", image_path: ["products/Earring/E07-Ultra slim stick ear rings/E07-2.png",
+                                                              "products/Earring/E07-Ultra slim stick ear rings/E07-3.png"]
+Image.create! product_id:8, category: "Earring", image_path: ["products/Earring/E08-Triangle peral ear rings/E08-2.png",
+                                                              "products/Earring/E08-Triangle peral ear rings/E08-3.png"]
+Image.create! product_id:9, category: "Earring", image_path: ["products/Earring/E09-Circle ring ear rings/E09-1.png",
+                                                              "products/Earring/E09-Circle ring ear rings/E09-2.png"]
+Image.create! product_id:10, category: "Earring", image_path: ["products/Earring/E10-Rain drop ear rings/E10-2.png",
+                                                               "products/Earring/E10-Rain drop ear rings/E10-3.png"]
+Image.create! product_id:11, category: "Earring", image_path: ["products/Earring/E11-Flower crystal ear rings/E11-2.png",
+                                                               "products/Earring/E11-Flower crystal ear rings/E11-3.png"]
+Image.create! product_id:12, category: "Earring", image_path: ["products/Earring/E12-Flower ear rings/E12-2.png",
+                                                               "products/Earring/E12-Flower ear rings/E12-3.png",
+                                                               "products/Earring/E12-Flower ear rings/E12-4.png"]
 
 # Necklace
 Product.create! product_id:1, category: "Necklace", name: "Pearl and ribbon necklace", price: 1, quantity: 1, active: true
