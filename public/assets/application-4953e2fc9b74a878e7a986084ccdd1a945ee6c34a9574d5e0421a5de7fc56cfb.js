@@ -8174,7 +8174,7 @@ if ( !support.style ) {
 		get: function( elem ) {
 			// Return undefined in the case of empty string
 			// Note: IE uppercases css property names, but if we were to .toLowerCase()
-			// .cssText, that would destroy case senstitivity in URL's, like in "background"
+			// .cssText, that would destroy case senstitivity in URL's, like in "homes"
 			return elem.style.cssText || undefined;
 		},
 		set: function( elem, value ) {
@@ -11549,7 +11549,7 @@ return jQuery;
     };
 
     ProgressBar.prototype._createCSSRule = function() {
-      return this.elementSelector + "." + className + "::before {\n  content: '" + this.content + "';\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 2000;\n  background-color: #0076ff;\n  height: 3px;\n  opacity: " + this.opacity + ";\n  width: " + this.value + "%;\n  transition: width " + this.speed + "ms ease-out, opacity " + (this.speed / 2) + "ms ease-in;\n  transform: translate3d(0,0,0);\n}";
+      return this.elementSelector + "." + className + "::before {\n  content: '" + this.content + "';\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 2000;\n  homes-color: #0076ff;\n  height: 3px;\n  opacity: " + this.opacity + ";\n  width: " + this.value + "%;\n  transition: width " + this.speed + "ms ease-out, opacity " + (this.speed / 2) + "ms ease-in;\n  transform: translate3d(0,0,0);\n}";
     };
 
     return ProgressBar;
@@ -11957,7 +11957,7 @@ function OnClick(showHideDiv, switchImgTag) {
 	var imageEle = document.getElementById(switchImgTag);
 	if(ele.style.display == "none") {
 			ele.style.display = "block";
-			document.getElementById('home').style.display = "none";
+			document.getElementById('homes').style.display = "none";
 	}
 	else {
 	//                ele.style.display = "block";

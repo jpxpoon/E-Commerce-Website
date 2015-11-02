@@ -72,7 +72,7 @@ function OnClick(showHideDiv, switchImgTag) {
 	var imageEle = document.getElementById(switchImgTag);
 	if(ele.style.display == "none") {
 			ele.style.display = "block";
-			document.getElementById('home').style.display = "none";
+			document.getElementById('homes').style.display = "none";
 	}
 	else {
 	//                ele.style.display = "block";
