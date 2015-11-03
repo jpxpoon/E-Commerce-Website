@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
-  get 'products/show'
 
   resource :home, only: [:show]
   resource :product, only: [:show]
-
 	root "homes#show"
 
 

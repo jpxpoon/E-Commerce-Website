@@ -11,20 +11,22 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-logo" href="#"><%= link_to image_tag("JM_logo.png"), root_path %></a>
+        <%= link_to image_tag("JM_logo.png"), root_path, class: "navbar-logo" %>
       </div>
       <!-- menu item -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
         <div id="menu-center">
         <ul class="nav navbar-nav navbar-left" data-hover="dropdown" data-animations="lightSpeedIn" >
-          <li><a class="menu" href="#home_page">HOME</a></li>
+          <li><%= link_to "HOME", root_path + "#home_page", class: "menu", 'data-no-turbolink'=>'true' %></li>
           <li><a class="menu" href="#product">ABOUT US</a></li>
-          <li class="dropdown"><a class="menu all" href="#store">STORE<span class="caret-right"></span></a>
+          <li class="dropdown"><%= link_to root_path + "#store", class: "menu all" do %>
+            STORE<span class="caret-right"></span><% end %>
             <ul class="dropdown-menu">
-              <li><a href="#store" data-id="Bracelet">Bracelet</a></li>
-              <li><a href="#store" data-id="Earrings">Earring</a></li>
-              <li><a href="#store" data-id="Necklace">Necklace</a></li>
-              <li><a href="#store">Other Accessories</a></li>
+              <li><%= link_to "Bracelet", root_path + "#store", class: "menu", :"data-id" => "Bracelet" %></li>
+              <li><a class="menu" href="#store" data-id="Earrings">Earring</a></li>
+              <li><a class="menu" href="#store" data-id="Necklace">Necklace</a></li>
+              <li><a class="menu" href="#store" data-if="Hair">Hair</a></li>
+              <li><a class="menu" href="#store" data-id="Scarf">Scarf</a></li>
             </ul>
           </li>
           <li><a class="menu" href="#contact_us">CONTACT US</a></li>
