@@ -12,20 +12,20 @@ Product.create! product_id:1, category: "Bracelet", name: "Metal Bracelet", pric
 Product.create! product_id:2, category: "Bracelet", name: "Leather Bracelet", price: 1, quantity: 1, active: true
 Product.create! product_id:3, category: "Bracelet", name: "Leather Bracelet", price: 1, quantity: 1, active: true
 Product.create! product_id:4, category: "Bracelet", name: "Masstige heart necklace", price: 1, quantity: 1, active: true
-Image.create! product_id:1, category: "Bracelet", image_path: ["/assets/products/Bracelet/B01-Metal Bracelet/B01-1.jpg",
-                                                               "/assets/products/Bracelet/B01-Metal Bracelet/B01-2.jpg",
-                                                               "/assets/products/Bracelet/B01-Metal Bracelet/B01-3.png"]
-Image.create! product_id:2, category: "Bracelet", image_path: ["/assets/products/Bracelet/B02-Leather bracelet/B02-1.jpg",
-                                                               "/assets/products/Bracelet/B02-Leather bracelet/B02-2.jpg",
-                                                               "/assets/products/Bracelet/B02-Leather bracelet/B02-3.jpg",
-                                                               "/assets/products/Bracelet/B02-Leather bracelet/B02-4.jpg"]
-Image.create! product_id:3, category: "Bracelet", image_path: ["/assets/products/Bracelet/B03-Leather bracelet/B03-1.jpg",
-                                                               "/assets/products/Bracelet/B03-Leather bracelet/B03-2.png",
-                                                               "/assets/products/Bracelet/B03-Leather bracelet/B03-3.png",
-                                                               "/assets/products/Bracelet/B03-Leather bracelet/B03-4.png"]
-Image.create! product_id:4, category: "Bracelet", image_path: ["/assets/products/Bracelet/B04-Masstige heart necklace/B04-2.png",
-                                                               "/assets/products/Bracelet/B04-Masstige heart necklace/B04-3.png",
-                                                               "/assets/products/Bracelet/B04-Masstige heart necklace/B04-4.png"]
+Image.create! product_id:1, category: "Bracelet", image_path: ["products/Bracelet/B01-Metal Bracelet/B01-1.jpg",
+                                                               "products/Bracelet/B01-Metal Bracelet/B01-2.jpg",
+                                                               "products/Bracelet/B01-Metal Bracelet/B01-3.png"]
+Image.create! product_id:2, category: "Bracelet", image_path: ["products/Bracelet/B02-Leather bracelet/B02-1.jpg",
+                                                               "products/Bracelet/B02-Leather bracelet/B02-2.jpg",
+                                                               "products/Bracelet/B02-Leather bracelet/B02-3.jpg",
+                                                               "products/Bracelet/B02-Leather bracelet/B02-4.jpg"]
+Image.create! product_id:3, category: "Bracelet", image_path: ["products/Bracelet/B03-Leather bracelet/B03-1.jpg",
+                                                               "products/Bracelet/B03-Leather bracelet/B03-2.png",
+                                                               "products/Bracelet/B03-Leather bracelet/B03-3.png",
+                                                               "products/Bracelet/B03-Leather bracelet/B03-4.png"]
+Image.create! product_id:4, category: "Bracelet", image_path: ["products/Bracelet/B04-Masstige heart necklace/B04-2.png",
+                                                               "products/Bracelet/B04-Masstige heart necklace/B04-3.png",
+                                                               "products/Bracelet/B04-Masstige heart necklace/B04-4.png"]
 
 # Earring
 Product.create! product_id:1, category: "Earring", name: "Crystal flower earrings", price: 1, quantity: 1, active: true
@@ -79,30 +79,30 @@ Product.create! product_id:4, category: "Necklace", name: "Crystal necklace", pr
 Product.create! product_id:5, category: "Necklace", name: "Owl & tassel long necklace", price: 1, quantity: 1, active: true
 Product.create! product_id:6, category: "Necklace", name: "Ultra slim stick necklace", price: 1, quantity: 1, active: true
 Product.create! product_id:9, category: "Necklace", name: "Left necklace", price: 1, quantity: 1, active: true
-Image.create! product_id:1, category: "Necklace", image_path: ["/assets/products/Necklace/N01-Pearl and ribbon necklace/N01-1.jpg",
-                                                               "/assets/products/Necklace/N01-Pearl and ribbon necklace/N01-2.jpg",
-                                                               "/assets/products/Necklace/N01-Pearl and ribbon necklace/N01-3.png",
-                                                               "/assets/products/Necklace/N01-Pearl and ribbon necklace/N01-4.png",
-                                                               "/assets/products/Necklace/N01-Pearl and ribbon necklace/N01-5.png"]
-Image.create! product_id:2, category: "Necklace", image_path: ["/assets/products/Necklace/N02-Silver heart necklace/N02-1.jpg",
-                                                               "/assets/products/Necklace/N02-Silver heart necklace/N02-2.png",
-                                                               "/assets/products/Necklace/N02-Silver heart necklace/N02-3.png",
-                                                               "/assets/products/Necklace/N02-Silver heart necklace/N02-4.png"]
-Image.create! product_id:3, category: "Necklace", image_path: ["/assets/products/Necklace/N03-Pearl chain necklace/N03-1.jpg",
-                                                               "/assets/products/Necklace/N03-Pearl chain necklace/N03-2.png",
-                                                               "/assets/products/Necklace/N03-Pearl chain necklace/N03-3.png"]
-Image.create! product_id:4, category: "Necklace", image_path: ["/assets/products/Necklace/N04-Crystal necklace/N04-1.jpg",
-                                                               "/assets/products/Necklace/N04-Crystal necklace/N04-2.png",
-                                                               "/assets/products/Necklace/N04-Crystal necklace/N04-3.png",
-                                                               "/assets/products/Necklace/N04-Crystal necklace/N04-4.png"]
-Image.create! product_id:5, category: "Necklace", image_path: ["/assets/products/Necklace/N05-Owl & tassel long necklace/N05-1.jpg",
-                                                               "/assets/products/Necklace/N05-Owl & tassel long necklace/N05-2.png",
-                                                               "/assets/products/Necklace/N05-Owl & tassel long necklace/N05-3.png",
-                                                               "/assets/products/Necklace/N05-Owl & tassel long necklace/N05-4.png"]
-Image.create! product_id:6, category: "Necklace", image_path: ["/assets/products/Necklace/N06-Ultra slim stick necklace/N06-2.png",
-                                                               "/assets/products/Necklace/N06-Ultra slim stick necklace/N06-3.png"]
-Image.create! product_id:9, category: "Necklace", image_path: ["/assets/products/Necklace/N09-Leaf necklace/N09-2.png",
-                                                               "/assets/products/Necklace/N09-Leaf necklace/N09-3.png"]
+Image.create! product_id:1, category: "Necklace", image_path: ["products/Necklace/N01-Pearl and ribbon necklace/N01-1.jpg",
+                                                               "products/Necklace/N01-Pearl and ribbon necklace/N01-2.jpg",
+                                                               "products/Necklace/N01-Pearl and ribbon necklace/N01-3.png",
+                                                               "products/Necklace/N01-Pearl and ribbon necklace/N01-4.png",
+                                                               "products/Necklace/N01-Pearl and ribbon necklace/N01-5.png"]
+Image.create! product_id:2, category: "Necklace", image_path: ["products/Necklace/N02-Silver heart necklace/N02-1.jpg",
+                                                               "products/Necklace/N02-Silver heart necklace/N02-2.png",
+                                                               "products/Necklace/N02-Silver heart necklace/N02-3.png",
+                                                               "products/Necklace/N02-Silver heart necklace/N02-4.png"]
+Image.create! product_id:3, category: "Necklace", image_path: ["products/Necklace/N03-Pearl chain necklace/N03-1.jpg",
+                                                               "products/Necklace/N03-Pearl chain necklace/N03-2.png",
+                                                               "products/Necklace/N03-Pearl chain necklace/N03-3.png"]
+Image.create! product_id:4, category: "Necklace", image_path: ["products/Necklace/N04-Crystal necklace/N04-1.jpg",
+                                                               "products/Necklace/N04-Crystal necklace/N04-2.png",
+                                                               "products/Necklace/N04-Crystal necklace/N04-3.png",
+                                                               "products/Necklace/N04-Crystal necklace/N04-4.png"]
+Image.create! product_id:5, category: "Necklace", image_path: ["products/Necklace/N05-Owl & tassel long necklace/N05-1.jpg",
+                                                               "products/Necklace/N05-Owl & tassel long necklace/N05-2.png",
+                                                               "products/Necklace/N05-Owl & tassel long necklace/N05-3.png",
+                                                               "products/Necklace/N05-Owl & tassel long necklace/N05-4.png"]
+Image.create! product_id:6, category: "Necklace", image_path: ["products/Necklace/N06-Ultra slim stick necklace/N06-2.png",
+                                                               "products/Necklace/N06-Ultra slim stick necklace/N06-3.png"]
+Image.create! product_id:9, category: "Necklace", image_path: ["products/Necklace/N09-Leaf necklace/N09-2.png",
+                                                               "products/Necklace/N09-Leaf necklace/N09-3.png"]
 
 # Hair
 Product.create! product_id:1, category: "Hair", name: "Check ribbon (Hairtie/ Hairpin)", price: 1, quantity: 1, active: true

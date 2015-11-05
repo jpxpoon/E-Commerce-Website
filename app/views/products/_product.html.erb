@@ -1,3 +1,39 @@
 <div id="product">
+  <div class="container">
+    <!-- navigation -->
+    <ul class="nav_product">
+      <a href="#" class="all">STORE</a>
+      <a href="#" ><%= @product.category%></a>
+    </ul>
+
+    <br/>
+
+    <div class="product_info">
+    <h3><%= @product.name%></h3>
+    <h3>$<%= @product.price%></h3>
+    <hr align="left" width="250em">
+    <h4>Color</h4>
+    <h4>Quantity</h4>
+    <button>Add to Cart</button>
+  </div>
+
+    <div class="image_info grid-container">
+      <div class="thumbnails">
+        <% @product_image.image_path.each do |image| %>
+            <img onclick="preview.src = this.src" src="/assets<%= image %>" alt=""/>
+        <% end %>
+      </div>
+
+      <div class="preview">
+        <img name="preview" src="/assets/<%= @product_image.image_path[0] %>" alt=""/>
+      </div>
+
+    </div> <!-- image info -->
+
+    <br/>
+    <!--<hr width="110%" style="margin-left: -5em">-->
+
+  </div> <!-- container -->
+
 
 </div>

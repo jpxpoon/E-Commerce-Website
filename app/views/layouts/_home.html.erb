@@ -17,19 +17,19 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
         <div id="menu-center">
         <ul class="nav navbar-nav navbar-left" data-hover="dropdown" data-animations="lightSpeedIn" >
-          <li><%= link_to "HOME", root_path + "#home_page", class: "menu", 'data-no-turbolink'=>'true' %></li>
+          <li><%= link_to "HOME", root_path + "#home_page", class: "menu", title: "home" %></li>
           <li><a class="menu" href="#product">ABOUT US</a></li>
           <li class="dropdown"><%= link_to root_path + "#store", class: "menu all" do %>
             STORE<span class="caret-right"></span><% end %>
             <ul class="dropdown-menu">
-              <li><%= link_to "Bracelet", root_path + "#store", class: "menu", :"data-id" => "Bracelet" %></li>
-              <li><a class="menu" href="#store" data-id="Earrings">Earring</a></li>
-              <li><a class="menu" href="#store" data-id="Necklace">Necklace</a></li>
+              <li><%= link_to "HOME", root_path + "#home_page", class: "menu", title: "home" %></li>
+              <li><%= link_to "Earring", root_path + "#store", class: "menu", :"data-id" => "Earrings" %></li>
+              <li><%= link_to "Necklace", root_path + "#store", class: "menu", :"data-id" => "Necklace" %></li>
               <li><a class="menu" href="#store" data-if="Hair">Hair</a></li>
               <li><a class="menu" href="#store" data-id="Scarf">Scarf</a></li>
             </ul>
           </li>
-          <li><a class="menu" href="#contact_us">CONTACT US</a></li>
+          <li><%= link_to "CONTACT US", root_path, class: "menu" %></li>
           <li><a href="#">CART</a></li>
         </ul>
         </div>

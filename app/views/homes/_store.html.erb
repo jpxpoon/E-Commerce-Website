@@ -18,7 +18,8 @@
       <ul class="grid">
         <% @bracelets_images.each do |image| %>
             <figure class="effect-lexi">
-              <a href="#product"><img src="<%= image.image_path[0] %>" ></a>
+              <%= link_to image_tag(image.image_path[0], :alt => image.product_id), product_path(pid: image.product_id,
+                                                                                                 category: image.category) %>
               <figcaption>
                 <% @bracelets.each do |product| %>
                     <% if product.product_id == image.product_id %>
@@ -37,7 +38,8 @@
       <ul class="grid">
         <% @earrings_images.each do |image| %>
             <li>
-              <%= link_to image_tag(image.image_path[0], :alt => image.product_id), product_path %>
+              <%= link_to image_tag(image.image_path[0], :alt => image.product_id), product_path(pid: image.product_id,
+                                                                                                 category: image.category) %>
               <% @earrings.each do |product| %>
                   <% if product.product_id == image.product_id %>
                       <h4><%= product.name %></h4>
@@ -54,7 +56,8 @@
       <ul class="grid">
         <% @necklaces_images.each do |image| %>
             <li class="effect-lexi">
-              <a href="#product"><img src="<%= image.image_path[0] %>" ></a>
+              <%= link_to image_tag(image.image_path[0], :alt => image.product_id), product_path(pid: image.product_id,
+                                                                                                 category: image.category) %>
               <figcaption>
                 <% @necklaces.each do |product| %>
                     <% if product.product_id == image.product_id %>
